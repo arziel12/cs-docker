@@ -20,7 +20,7 @@ RUN /var/docker/vendor/bin/phpcs -i
 RUN echo "Slevomat Sniffs:"
 RUN /var/docker/vendor/bin/phpcs -se --standard=SlevomatCodingStandard
 RUN echo "WGCS Sniffs:"
-RUN /var/docker/vendor/bin/phpcs -se --standard=WGCS
+RUN /var/docker/vendor/bin/phpcs -se --standard=ACS
 
 WORKDIR /opt/project
 
