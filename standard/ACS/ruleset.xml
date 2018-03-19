@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Lukas 'Arziel' Klima Coding Standard">
+<ruleset name="Arziel Coding Standard">
 	<description>
 		Coding Standard for PHP 7.2+
 	</description>
