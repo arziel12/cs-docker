@@ -15,11 +15,14 @@ ADD standard/ACS /var/docker/vendor/squizlabs/php_codesniffer/src/Standards/ACS
 
 RUN echo "PHP Info"
 RUN php -v
+
 RUN echo "Installed Standards:"
 RUN /var/docker/vendor/bin/phpcs -i
+
 RUN echo "Slevomat Sniffs:"
 RUN /var/docker/vendor/bin/phpcs -se --standard=SlevomatCodingStandard
-RUN echo "WGCS Sniffs:"
+
+RUN echo "Sniffs:"
 RUN /var/docker/vendor/bin/phpcs -se --standard=ACS
 
 WORKDIR /opt/project
